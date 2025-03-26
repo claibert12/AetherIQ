@@ -1,0 +1,2022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AetherIQ - Enterprise AI Automation Platform | License Optimization & Security</title>
+    <meta name="description" content="Transform enterprise operations with AI-powered automation, license optimization, and advanced security. Reduce costs by up to 40% with intelligent workflow automation.">
+    <meta name="keywords" content="enterprise automation, license optimization, AI automation, workflow automation, enterprise security, cost reduction, IT optimization, digital transformation, enterprise software, compliance automation">
+    <meta name="author" content="AetherIQ">
+    <meta property="og:title" content="AetherIQ - Enterprise AI Automation Platform | License Optimization & Security">
+    <meta property="og:description" content="Transform enterprise operations with AI-powered automation and license optimization. Reduce costs by up to 40%.">
+    <meta property="og:type" content="website">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body {
+            background: #0a0a0a;
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #0094ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #bbb;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #00d4ff;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn {
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, #00d4ff, #0094ff);
+            color: white;
+            border: none;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 1px solid #00d4ff;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 0 5%;
+            margin-top: 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(0, 212, 255, 0.1), transparent 70%);
+            z-index: -1;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(90deg, #00d4ff, #0094ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #bbb;
+            margin-bottom: 2rem;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 5rem 5%;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-title p {
+            color: #bbb;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent, rgba(0, 212, 255, 0.1), transparent);
+            transform: translateX(-100%);
+            transition: transform 0.6s;
+        }
+
+        .feature-card:hover::after {
+            transform: translateX(100%);
+        }
+
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(90deg, #00d4ff, #0094ff);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 1rem;
+        }
+
+        .feature-card p {
+            color: #bbb;
+        }
+
+        /* CTA Section */
+        .cta {
+            padding: 5rem 5%;
+            text-align: center;
+            background: linear-gradient(90deg, rgba(0, 212, 255, 0.1), rgba(0, 148, 255, 0.1));
+        }
+
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta p {
+            color: #bbb;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        /* Mailchimp Form Styling */
+        #mc_embed_shell {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+        }
+
+        .mc-field-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .mc-field-group input {
+            width: 100%;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 6px;
+            color: white;
+            font-size: 1rem;
+        }
+
+        .mc-field-group input:focus {
+            outline: none;
+            border-color: #00d4ff;
+        }
+
+        #mc-embedded-subscribe {
+            width: 100%;
+            padding: 1rem;
+            background: linear-gradient(90deg, #00d4ff, #0094ff);
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        #mc-embedded-subscribe:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content {
+                text-align: center;
+            }
+
+            .nav-buttons {
+                display: none;
+            }
+        }
+
+        /* Adding new styles for additional sections */
+        .stats-section {
+            padding: 4rem 5%;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #00d4ff, #0094ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .trust-section {
+            padding: 4rem 5%;
+            text-align: center;
+        }
+
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .trust-badge {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .case-studies {
+            padding: 4rem 5%;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .case-study-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .case-study-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .case-study-logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .case-study-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .metric-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #00d4ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .chat-widget {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: linear-gradient(90deg, #00d4ff, #0094ff);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(0, 212, 255, 0.3);
+            transition: transform 0.3s;
+            z-index: 1000;
+        }
+
+        .chat-widget:hover {
+            transform: scale(1.1);
+        }
+
+        .feature-demo {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            margin-top: 1rem;
+        }
+
+        .feature-demo img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .feature-demo:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Mobile Optimizations */
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .trust-badges {
+                flex-direction: column;
+            }
+
+            .chat-widget {
+                bottom: 1rem;
+                right: 1rem;
+            }
+        }
+
+        /* Adding new styles for additional sections */
+        .api-section {
+            padding: 4rem 5%;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .api-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .api-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+        }
+
+        .code-block {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 1rem;
+            border-radius: 6px;
+            margin-top: 1rem;
+            font-family: monospace;
+            overflow-x: auto;
+        }
+
+        .testimonials {
+            padding: 4rem 5%;
+            text-align: center;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonial-quote {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            font-size: 3rem;
+            color: rgba(0, 212, 255, 0.2);
+        }
+
+        .testimonial-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            background: linear-gradient(90deg, #00d4ff, #0094ff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .chat-window {
+            position: fixed;
+            bottom: 5rem;
+            right: 2rem;
+            width: 350px;
+            height: 500px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            z-index: 1001;
+        }
+
+        .chat-header {
+            padding: 1rem;
+            background: linear-gradient(90deg, #00d4ff, #0094ff);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chat-messages {
+            flex: 1;
+            padding: 1rem;
+            overflow-y: auto;
+        }
+
+        .chat-input {
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .chat-input input {
+            flex: 1;
+            padding: 0.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        .chat-input button {
+            padding: 0.5rem 1rem;
+            background: linear-gradient(90deg, #00d4ff, #0094ff);
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .message {
+            margin-bottom: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            max-width: 80%;
+        }
+
+        .message.user {
+            background: linear-gradient(90deg, #00d4ff, #0094ff);
+            margin-left: auto;
+        }
+
+        .message.bot {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .demo-video {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            margin-top: 1rem;
+        }
+
+        .demo-video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Mobile Optimizations */
+        @media (max-width: 768px) {
+            .chat-window {
+                width: 100%;
+                height: 100%;
+                bottom: 0;
+                right: 0;
+                border-radius: 0;
+            }
+        }
+
+        /* Adding new animation styles */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .slide-in {
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .slide-in.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* Enhanced feature card animations */
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+        }
+
+        /* New pricing section styles */
+        .pricing-section {
+            padding: 4rem 5%;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .pricing-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+        }
+
+        .pricing-header {
+            margin-bottom: 2rem;
+        }
+
+        .pricing-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 1rem 0;
+            background: linear-gradient(90deg, #00d4ff, #0094ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin: 2rem 0;
+            text-align: left;
+        }
+
+        .pricing-features li {
+            margin: 1rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .pricing-features li i {
+            color: #00d4ff;
+        }
+
+        /* New FAQ section styles */
+        .faq-section {
+            padding: 4rem 5%;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .faq-grid {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+        }
+
+        .faq-answer {
+            margin-top: 1rem;
+            display: none;
+            color: #bbb;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Enhanced chat window animations */
+        .chat-window {
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        .chat-window.active {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        /* New contact section styles */
+        .contact-section {
+            padding: 4rem 5%;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-form {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #bbb;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 6px;
+            color: white;
+        }
+
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        /* Mobile optimizations */
+        @media (max-width: 768px) {
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* New ROI Calculator Styles */
+        .roi-calculator {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            margin: 2rem 0;
+        }
+
+        .calculator-inputs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .calculator-input {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .calculator-input label {
+            color: #bbb;
+            font-size: 0.9rem;
+        }
+
+        .calculator-input input {
+            padding: 0.8rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 6px;
+            color: white;
+        }
+
+        .calculator-results {
+            background: rgba(0, 212, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .calculator-results::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent, rgba(0, 212, 255, 0.2), transparent);
+            animation: shine 2s infinite;
+        }
+
+        @keyframes shine {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Enhanced Pricing Table Styles */
+        .pricing-comparison {
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .pricing-table th,
+        .pricing-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .pricing-table th {
+            background: rgba(255, 255, 255, 0.05);
+            font-weight: 600;
+        }
+
+        .feature-check {
+            color: #00d4ff;
+        }
+
+        .feature-unavailable {
+            color: #666;
+        }
+
+        /* Enhanced Trust Section */
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .trust-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .trust-icon {
+            font-size: 2rem;
+            color: #00d4ff;
+            margin-bottom: 1rem;
+        }
+
+        /* Enhanced CTA Section */
+        .cta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .cta-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .cta-icon {
+            font-size: 2.5rem;
+            color: #00d4ff;
+            margin-bottom: 1rem;
+        }
+
+        /* Mobile Optimizations */
+        @media (max-width: 768px) {
+            .calculator-inputs {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-table {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Loading Animation */
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #0a0a0a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid rgba(0, 212, 255, 0.1);
+            border-radius: 50%;
+            border-top-color: #00d4ff;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Enhanced Mobile Navigation */
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(10, 10, 10, 0.95);
+            z-index: 1000;
+            padding: 2rem;
+        }
+
+        .mobile-nav.active {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mobile-nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .mobile-nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 1rem;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .mobile-nav-links a:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Enhanced Scroll Progress */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #0094ff);
+            transform-origin: 0%;
+            z-index: 1001;
+        }
+
+        /* Mobile Optimizations */
+        @media (max-width: 768px) {
+            .mobile-nav-toggle {
+                display: block;
+            }
+
+            .pricing-table {
+                font-size: 0.9rem;
+            }
+
+            .calculator-inputs {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Enhanced Pricing Styles */
+        .pricing-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .feature-group {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+        }
+
+        .feature-group h3 {
+            color: #00d4ff;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .feature-group ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-group ul li {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .feature-group ul li i {
+            color: #00d4ff;
+        }
+
+        .pricing-cta {
+            background: rgba(0, 212, 255, 0.1);
+            padding: 3rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .cta-content h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .pricing-features {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+
+    <!-- Mobile Navigation Toggle -->
+    <button class="mobile-nav-toggle" style="display: none;">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <div class="mobile-nav-header">
+            <div class="logo">AetherIQ</div>
+            <button class="close-mobile-nav">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="mobile-nav-links">
+            <a href="#features">Features</a>
+            <a href="#case-studies">Case Studies</a>
+            <a href="#security">Security</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="logo">AetherIQ</div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#case-studies">Case Studies</a>
+            <a href="#security">Security</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-buttons">
+            <button class="btn btn-secondary">Sign In</button>
+            <button class="btn btn-primary">Schedule Demo</button>
+        </div>
+    </nav>
+
+    <!-- Enhanced Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge" style="background: rgba(0, 212, 255, 0.1); padding: 0.5rem 1rem; border-radius: 20px; display: inline-block; margin-bottom: 1rem; font-size: 0.9rem;">
+                <i class="fas fa-star"></i> Trusted by 500+ Enterprise Clients
+            </div>
+            <h1>Enterprise AI Automation That Drives Real Business Value</h1>
+            <p class="hero-subtitle" style="font-size: 1.4rem; margin-bottom: 2rem; color: #bbb;">Transform your IT operations with AI-powered automation. Reduce costs by 40%, automate 70% of manual tasks, and ensure compliance across your enterprise.</p>
+            <div class="hero-cta-group" style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+                <button class="btn btn-primary" style="padding: 1rem 2rem; font-size: 1.1rem;">
+                    Start 14-Day Free Trial
+                    <span style="display: block; font-size: 0.8rem; opacity: 0.8;">No credit card required</span>
+                </button>
+                <button class="btn btn-secondary" style="padding: 1rem 2rem; font-size: 1.1rem;">
+                    Schedule Enterprise Demo
+                    <span style="display: block; font-size: 0.8rem; opacity: 0.8;">See AetherIQ in action</span>
+                </button>
+            </div>
+            <div class="hero-metrics" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2rem;">
+                <div class="metric-card" style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px; text-align: center;">
+                    <div style="font-size: 2rem; font-weight: 700; color: #00d4ff;">40%</div>
+                    <div style="font-size: 0.9rem; color: #bbb;">Average Cost Reduction</div>
+                </div>
+                <div class="metric-card" style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px; text-align: center;">
+                    <div style="font-size: 2rem; font-weight: 700; color: #00d4ff;">70%</div>
+                    <div style="font-size: 0.9rem; color: #bbb;">Manual Tasks Automated</div>
+                </div>
+                <div class="metric-card" style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px; text-align: center;">
+                    <div style="font-size: 2rem; font-weight: 700; color: #00d4ff;">99.9%</div>
+                    <div style="font-size: 0.9rem; color: #bbb;">Platform Uptime</div>
+                </div>
+            </div>
+            <div class="trust-badges" style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                <div class="trust-badge" style="background: rgba(255, 255, 255, 0.05); padding: 0.5rem 1rem; border-radius: 6px; display: flex; align-items: center; gap: 0.5rem;">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>SOC 2 Type II Certified</span>
+                </div>
+                <div class="trust-badge" style="background: rgba(255, 255, 255, 0.05); padding: 0.5rem 1rem; border-radius: 6px; display: flex; align-items: center; gap: 0.5rem;">
+                    <i class="fas fa-check-circle"></i>
+                    <span>40% Average Cost Savings</span>
+                </div>
+                <div class="trust-badge" style="background: rgba(255, 255, 255, 0.05); padding: 0.5rem 1rem; border-radius: 6px; display: flex; align-items: center; gap: 0.5rem;">
+                    <i class="fas fa-users"></i>
+                    <span>500+ Enterprise Clients</span>
+                </div>
+                <div class="trust-badge" style="background: rgba(255, 255, 255, 0.05); padding: 0.5rem 1rem; border-radius: 6px; display: flex; align-items: center; gap: 0.5rem;">
+                    <i class="fas fa-lock"></i>
+                    <span>Enterprise-Grade Security</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI Calculator Section -->
+    <section class="roi-section">
+        <div class="section-title">
+            <h2>Calculate Your Potential Savings</h2>
+            <p>See how AetherIQ can transform your enterprise operations</p>
+        </div>
+        <div class="roi-calculator">
+            <div class="calculator-inputs">
+                <div class="calculator-input">
+                    <label>Annual Software Budget</label>
+                    <input type="number" id="software-budget" placeholder="Enter amount">
+                </div>
+                <div class="calculator-input">
+                    <label>Number of Users</label>
+                    <input type="number" id="user-count" placeholder="Enter number">
+                </div>
+                <div class="calculator-input">
+                    <label>Current Manual Tasks (hours/week)</label>
+                    <input type="number" id="manual-hours" placeholder="Enter hours">
+                </div>
+            </div>
+            <div class="calculator-results">
+                <h3>Estimated Annual Savings</h3>
+                <div class="result-item">
+                    <span>Software Cost Reduction:</span>
+                    <span id="cost-savings">$0</span>
+                </div>
+                <div class="result-item">
+                    <span>Time Savings (hours/year):</span>
+                    <span id="time-savings">0</span>
+                </div>
+                <div class="result-item">
+                    <span>Total Value:</span>
+                    <span id="total-value">$0</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Features Section -->
+    <section class="features" id="features">
+        <div class="section-title">
+            <div class="section-badge" style="background: rgba(0, 212, 255, 0.1); padding: 0.5rem 1rem; border-radius: 20px; display: inline-block; margin-bottom: 1rem; font-size: 0.9rem;">
+                Enterprise-Grade Capabilities
+            </div>
+            <h2>Comprehensive Enterprise Automation Platform</h2>
+            <p>Everything you need to transform your IT operations and drive measurable business outcomes</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card" data-aos="fade-up">
+                <div class="feature-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>AI-Powered Automation</h3>
+                <p>Reduce manual tasks by 70% with intelligent workflow automation. Our AI learns from your operations to continuously optimize processes.</p>
+                <div class="feature-metrics" style="margin-top: 1rem; display: flex; gap: 1rem;">
+                    <div style="font-size: 0.9rem; color: #00d4ff;">
+                        <i class="fas fa-clock"></i> 70% Time Saved
+                    </div>
+                    <div style="font-size: 0.9rem; color: #00d4ff;">
+                        <i class="fas fa-chart-line"></i> 40% Cost Reduction
+                    </div>
+                </div>
+                <button class="btn btn-secondary" style="margin-top: 1rem; width: 100%;">View Demo</button>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <h3>Advanced Analytics</h3>
+                <p>Get predictive insights and real-time dashboards for data-driven decision making. Monitor ROI, compliance, and performance metrics.</p>
+                <div class="feature-metrics" style="margin-top: 1rem; display: flex; gap: 1rem;">
+                    <div style="font-size: 0.9rem; color: #00d4ff;">
+                        <i class="fas fa-bullseye"></i> 95% Accuracy
+                    </div>
+                    <div style="font-size: 0.9rem; color: #00d4ff;">
+                        <i class="fas fa-tachometer-alt"></i> Real-time Updates
+                    </div>
+                </div>
+                <button class="btn btn-secondary" style="margin-top: 1rem; width: 100%;">View Demo</button>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-icon">
+                    <i class="fas fa-plug"></i>
+                </div>
+                <h3>System Integration</h3>
+                <p>Seamlessly connect with your existing tools through our robust API and integration framework. Support for 100+ enterprise systems.</p>
+                <div class="feature-metrics" style="margin-top: 1rem; display: flex; gap: 1rem;">
+                    <div style="font-size: 0.9rem; color: #00d4ff;">
+                        <i class="fas fa-code-branch"></i> 100+ Integrations
+                    </div>
+                    <div style="font-size: 0.9rem; color: #00d4ff;">
+                        <i class="fas fa-bolt"></i> 99.9% Uptime
+                    </div>
+                </div>
+                <button class="btn btn-secondary" style="margin-top: 1rem; width: 100%;">View Demo</button>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Enterprise Security</h3>
+                <p>Bank-grade security with end-to-end encryption, SSO, and role-based access control. SOC 2 Type II certified and GDPR compliant.</p>
+                <div class="feature-metrics" style="margin-top: 1rem; display: flex; gap: 1rem;">
+                    <div style="font-size: 0.9rem; color: #00d4ff;">
+                        <i class="fas fa-lock"></i> 256-bit Encryption
+                    </div>
+                    <div style="font-size: 0.9rem; color: #00d4ff;">
+                        <i class="fas fa-user-shield"></i> SSO & MFA
+                    </div>
+                </div>
+                <button class="btn btn-secondary" style="margin-top: 1rem; width: 100%;">View Demo</button>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-icon">
+                    <i class="fas fa-tasks"></i>
+                </div>
+                <h3>Workflow Automation</h3>
+                <p>Create custom workflows with our intuitive builder. Automate complex processes across departments and systems.</p>
+                <div class="feature-metrics" style="margin-top: 1rem; display: flex; gap: 1rem;">
+                    <div style="font-size: 0.9rem; color: #00d4ff;">
+                        <i class="fas fa-code"></i> No-code Builder
+                    </div>
+                    <div style="font-size: 0.9rem; color: #00d4ff;">
+                        <i class="fas fa-sync"></i> Auto-scaling
+                    </div>
+                </div>
+                <button class="btn btn-secondary" style="margin-top: 1rem; width: 100%;">View Demo</button>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="feature-icon">
+                    <i class="fas fa-file-contract"></i>
+                </div>
+                <h3>Compliance & Governance</h3>
+                <p>Ensure regulatory compliance with automated audits, reporting, and policy enforcement. Support for HIPAA, GDPR, and more.</p>
+                <div class="feature-metrics" style="margin-top: 1rem; display: flex; gap: 1rem;">
+                    <div style="font-size: 0.9rem; color: #00d4ff;">
+                        <i class="fas fa-check-double"></i> Auto-compliance
+                    </div>
+                    <div style="font-size: 0.9rem; color: #00d4ff;">
+                        <i class="fas fa-file-alt"></i> Custom Reports
+                    </div>
+                </div>
+                <button class="btn btn-secondary" style="margin-top: 1rem; width: 100%;">View Demo</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- API Documentation Section -->
+    <section class="api-section" id="api">
+        <div class="section-title">
+            <h2>Developer-Friendly API</h2>
+            <p>Powerful APIs and SDKs for seamless integration</p>
+        </div>
+        <div class="api-grid">
+            <div class="api-card">
+                <h3>RESTful API</h3>
+                <p>Access all platform features through our comprehensive REST API.</p>
+                <div class="code-block">
+                    <pre><code>curl -X POST https://api.aetheriq.ai/v1/automation \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"workflow": "license_optimization"}'</code></pre>
+                </div>
+            </div>
+            <div class="api-card">
+                <h3>SDK Support</h3>
+                <p>Official SDKs for Python, Java, and Node.js.</p>
+                <div class="code-block">
+                    <pre><code>from aetheriq import Client
+
+client = Client(api_key="YOUR_API_KEY")
+workflow = client.create_workflow(
+    name="License Optimization",
+    type="automation"
+)</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Case Studies Section -->
+    <section class="case-studies" id="case-studies">
+        <div class="section-title">
+            <div class="section-badge" style="background: rgba(0, 212, 255, 0.1); padding: 0.5rem 1rem; border-radius: 20px; display: inline-block; margin-bottom: 1rem; font-size: 0.9rem;">
+                Enterprise Success Stories
+            </div>
+            <h2>Real Results from Industry Leaders</h2>
+            <p>See how forward-thinking enterprises are transforming their operations with AetherIQ</p>
+        </div>
+        <div class="case-study-card" data-aos="fade-up">
+            <div class="case-study-header">
+                <div class="case-study-logo" style="background: linear-gradient(45deg, #00d4ff, #0094ff);">
+                    <i class="fas fa-building" style="font-size: 2rem; color: white;"></i>
+                </div>
+                <div>
+                    <h3>Global Financial Institution</h3>
+                    <p style="color: #00d4ff;">Fortune 500 Company</p>
+                </div>
+            </div>
+            <p style="font-size: 1.1rem; margin: 1.5rem 0;">"AetherIQ has revolutionized our IT operations. The AI-powered automation has not only reduced costs but also improved our security posture and compliance reporting."</p>
+            <div class="case-study-metrics">
+                <div class="metric-item" style="background: rgba(0, 212, 255, 0.1);">
+                    <span class="metric-value">45%</span>
+                    <span>reduction in licensing costs</span>
+                </div>
+                <div class="metric-item" style="background: rgba(0, 212, 255, 0.1);">
+                    <span class="metric-value">80%</span>
+                    <span>process automation</span>
+                </div>
+                <div class="metric-item" style="background: rgba(0, 212, 255, 0.1);">
+                    <span class="metric-value">60%</span>
+                    <span>faster compliance reporting</span>
+                </div>
+                <div class="metric-item" style="background: rgba(0, 212, 255, 0.1);">
+                    <span class="metric-value">$2.5M</span>
+                    <span>annual cost savings</span>
+                </div>
+            </div>
+            <div class="case-study-details" style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+                <h4>Key Achievements</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: #00d4ff;"></i> Automated 200+ manual processes</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: #00d4ff;"></i> Reduced audit preparation time by 75%</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: #00d4ff;"></i> Achieved 100% compliance across all systems</li>
+                </ul>
+            </div>
+        </div>
+        <div class="case-study-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="case-study-header">
+                <div class="case-study-logo" style="background: linear-gradient(45deg, #00d4ff, #0094ff);">
+                    <i class="fas fa-hospital" style="font-size: 2rem; color: white;"></i>
+                </div>
+                <div>
+                    <h3>Healthcare Provider</h3>
+                    <p style="color: #00d4ff;">Top 10 US Healthcare System</p>
+                </div>
+            </div>
+            <p style="font-size: 1.1rem; margin: 1.5rem 0;">"AetherIQ's automation platform has transformed our healthcare IT operations. We've achieved unprecedented efficiency while maintaining the highest security standards."</p>
+            <div class="case-study-metrics">
+                <div class="metric-item" style="background: rgba(0, 212, 255, 0.1);">
+                    <span class="metric-value">65%</span>
+                    <span>cost savings</span>
+                </div>
+                <div class="metric-item" style="background: rgba(0, 212, 255, 0.1);">
+                    <span class="metric-value">90%</span>
+                    <span>faster incident resolution</span>
+                </div>
+                <div class="metric-item" style="background: rgba(0, 212, 255, 0.1);">
+                    <span class="metric-value">100%</span>
+                    <span>compliance achievement</span>
+                </div>
+                <div class="metric-item" style="background: rgba(0, 212, 255, 0.1);">
+                    <span class="metric-value">$3.8M</span>
+                    <span>annual cost savings</span>
+                </div>
+            </div>
+            <div class="case-study-details" style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+                <h4>Key Achievements</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: #00d4ff;"></i> Automated HIPAA compliance monitoring</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: #00d4ff;"></i> Reduced system downtime by 95%</li>
+                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check" style="color: #00d4ff;"></i> Streamlined patient data management</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="section-title">
+            <h2>What Our Clients Say</h2>
+            <p>Hear from industry leaders about their experience with AetherIQ</p>
+        </div>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-quote">"</div>
+                <div class="testimonial-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3>Sarah Johnson</h3>
+                <p>CTO, TechCorp</p>
+                <p>"AetherIQ has transformed how we manage our software assets. The AI-powered insights have saved us millions in licensing costs."</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-quote">"</div>
+                <div class="testimonial-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3>Michael Chen</h3>
+                <p>IT Director, Global Systems</p>
+                <p>"The automation capabilities are incredible. We've reduced manual tasks by 85% and improved our security posture significantly."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section class="trust-section" id="security">
+        <div class="section-title">
+            <h2>Enterprise-Grade Security & Compliance</h2>
+            <p>Your data is protected with industry-leading security measures</p>
+        </div>
+        <div class="trust-badges">
+            <div class="trust-badge">
+                <i class="fas fa-shield-alt"></i>
+                <span>SOC 2 Type II Certified</span>
+            </div>
+            <div class="trust-badge">
+                <i class="fas fa-lock"></i>
+                <span>256-bit Encryption</span>
+            </div>
+            <div class="trust-badge">
+                <i class="fas fa-user-shield"></i>
+                <span>SSO & MFA Support</span>
+            </div>
+            <div class="trust-badge">
+                <i class="fas fa-check-circle"></i>
+                <span>GDPR Compliant</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced CTA Section -->
+    <section class="cta">
+        <h2>Ready to Transform Your Enterprise?</h2>
+        <p>Join forward-thinking organizations in revolutionizing their operations with AetherIQ's comprehensive automation platform.</p>
+        <div id="mc_embed_shell">
+            <div id="mc_embed_signup">
+                <form action="https://AetherIQ.us17.list-manage.com/subscribe/post?u=5252af27db4b32ba8549ec145&amp;id=f5aa6ee3cf&amp;f_id=005548e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self" novalidate="">
+                    <div id="mc_embed_signup_scroll">
+                        <div class="mc-field-group">
+                            <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" placeholder="Enter your work email">
+                        </div>
+                        <div class="mc-field-group">
+                            <input type="text" name="FNAME" class="text" id="mce-FNAME" placeholder="First Name">
+                        </div>
+                        <div class="mc-field-group">
+                            <input type="text" name="COMPANY" class="text" id="mce-COMPANY" placeholder="Company">
+                        </div>
+                        <div id="mce-responses" class="clear foot">
+                            <div class="response" id="mce-error-response" style="display: none;"></div>
+                            <div class="response" id="mce-success-response" style="display: none;"></div>
+                        </div>
+                        <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                            <input type="text" name="b_5252af27db4b32ba8549ec145_f5aa6ee3cf" tabindex="-1" value="">
+                        </div>
+                        <div class="optionalParent">
+                            <div class="clear foot">
+                                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Start Free Trial">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Chat Widget -->
+    <div class="chat-widget">
+        <i class="fas fa-comments"></i>
+    </div>
+    <div class="chat-window">
+        <div class="chat-header">
+            <h3>AetherIQ Support</h3>
+            <button class="close-chat"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-messages">
+            <div class="message bot">
+                Hello! How can I help you today?
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Type your message...">
+            <button><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- New Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <div class="section-title">
+            <h2>Enterprise-Grade Pricing</h2>
+            <p>Choose the plan that best fits your organization's needs</p>
+        </div>
+        <div class="pricing-comparison">
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Features</th>
+                        <th>Professional</th>
+                        <th>Enterprise</th>
+                        <th>Custom</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Users</td>
+                        <td>Up to 500</td>
+                        <td>Up to 5,000</td>
+                        <td>Unlimited</td>
+                    </tr>
+                    <tr>
+                        <td>License Optimization</td>
+                        <td><i class="fas fa-check feature-check"></i></td>
+                        <td><i class="fas fa-check feature-check"></i></td>
+                        <td><i class="fas fa-check feature-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td>AI-Powered Automation</td>
+                        <td>Advanced</td>
+                        <td>Full Suite</td>
+                        <td>Custom AI Models</td>
+                    </tr>
+                    <tr>
+                        <td>Analytics & Reporting</td>
+                        <td>Advanced</td>
+                        <td>Custom Reports</td>
+                        <td>Predictive Analytics</td>
+                    </tr>
+                    <tr>
+                        <td>API Access</td>
+                        <td><i class="fas fa-check feature-check"></i></td>
+                        <td><i class="fas fa-check feature-check"></i></td>
+                        <td><i class="fas fa-check feature-check"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Support</td>
+                        <td>Priority</td>
+                        <td>24/7 Dedicated</td>
+                        <td>Dedicated Success Manager</td>
+                    </tr>
+                    <tr>
+                        <td>Security</td>
+                        <td>Enhanced</td>
+                        <td>Enterprise</td>
+                        <td>Custom Security Requirements</td>
+                    </tr>
+                    <tr>
+                        <td>Monthly Price</td>
+                        <td>$2,499</td>
+                        <td>$9,999</td>
+                        <td>Custom</td>
+                    </tr>
+                    <tr>
+                        <td>Annual Discount</td>
+                        <td>20%</td>
+                        <td>25%</td>
+                        <td>Custom</td>
+                    </tr>
+                    <tr>
+                        <td>ROI Guarantee</td>
+                        <td>3x</td>
+                        <td>5x</td>
+                        <td>Custom</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pricing-features">
+            <div class="feature-group">
+                <h3>Core Features (All Plans)</h3>
+                <ul>
+                    <li><i class="fas fa-check"></i> AI-Powered License Optimization</li>
+                    <li><i class="fas fa-check"></i> Automated Workflow Management</li>
+                    <li><i class="fas fa-check"></i> Real-time Analytics Dashboard</li>
+                    <li><i class="fas fa-check"></i> Compliance Monitoring</li>
+                    <li><i class="fas fa-check"></i> Basic API Access</li>
+                </ul>
+            </div>
+            <div class="feature-group">
+                <h3>Professional Plan Highlights</h3>
+                <ul>
+                    <li><i class="fas fa-check"></i> Advanced AI Automation</li>
+                    <li><i class="fas fa-check"></i> Custom Report Builder</li>
+                    <li><i class="fas fa-check"></i> Priority Support</li>
+                    <li><i class="fas fa-check"></i> Enhanced Security Features</li>
+                    <li><i class="fas fa-check"></i> 3x ROI Guarantee</li>
+                </ul>
+            </div>
+            <div class="feature-group">
+                <h3>Enterprise Plan Highlights</h3>
+                <ul>
+                    <li><i class="fas fa-check"></i> Full AI Suite with Custom Models</li>
+                    <li><i class="fas fa-check"></i> Advanced Analytics & Predictions</li>
+                    <li><i class="fas fa-check"></i> 24/7 Dedicated Support</li>
+                    <li><i class="fas fa-check"></i> Enterprise Security & Compliance</li>
+                    <li><i class="fas fa-check"></i> 5x ROI Guarantee</li>
+                </ul>
+            </div>
+            <div class="feature-group">
+                <h3>Custom Plan Benefits</h3>
+                <ul>
+                    <li><i class="fas fa-check"></i> Custom AI Model Development</li>
+                    <li><i class="fas fa-check"></i> Tailored Integration Solutions</li>
+                    <li><i class="fas fa-check"></i> Dedicated Success Manager</li>
+                    <li><i class="fas fa-check"></i> Custom Security Requirements</li>
+                    <li><i class="fas fa-check"></i> Flexible ROI Guarantees</li>
+                </ul>
+            </div>
+        </div>
+        <div class="pricing-cta">
+            <div class="cta-content">
+                <h3>Ready to Transform Your Enterprise?</h3>
+                <p>Start with a 14-day free trial. No credit card required.</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary">Start Free Trial</button>
+                    <button class="btn btn-secondary">Schedule Demo</button>
+                    <button class="btn btn-secondary">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Trust Section -->
+    <section class="trust-section">
+        <div class="section-title">
+            <h2>Trusted by Enterprise Leaders</h2>
+            <p>Join forward-thinking organizations in revolutionizing their operations</p>
+        </div>
+        <div class="trust-grid">
+            <div class="trust-card">
+                <div class="trust-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Enterprise Security</h3>
+                <p>SOC 2 Type II certified with end-to-end encryption</p>
+            </div>
+            <div class="trust-card">
+                <div class="trust-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Proven ROI</h3>
+                <p>40% average cost reduction for enterprise clients</p>
+            </div>
+            <div class="trust-card">
+                <div class="trust-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>24/7 Support</h3>
+                <p>Dedicated enterprise support team</p>
+            </div>
+            <div class="trust-card">
+                <div class="trust-icon">
+                    <i class="fas fa-sync"></i>
+                </div>
+                <h3>99.9% Uptime</h3>
+                <p>Enterprise-grade reliability</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="section-title">
+            <h2>Get in Touch</h2>
+            <p>Ready to transform your enterprise? Contact us today.</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info" data-aos="fade-right">
+                <h3>Contact Information</h3>
+                <div style="margin-top: 2rem;">
+                    <p><i class="fas fa-envelope"></i> Aetheriq@atheriq.ai</p>
+                    <p><i class="fas fa-phone"></i> 510-356-8406</p>
+                </div>
+                <div style="margin-top: 2rem;">
+                    <h4>Follow Us</h4>
+                    <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                        <a href="#" style="color: #00d4ff;"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" style="color: #00d4ff;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: #00d4ff;"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form" data-aos="fade-left">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Enhanced chat widget functionality
+        const chatWidget = document.querySelector('.chat-widget');
+        const chatWindow = document.querySelector('.chat-window');
+        const closeChat = document.querySelector('.close-chat');
+        const chatInput = document.querySelector('.chat-input input');
+        const chatMessages = document.querySelector('.chat-messages');
+
+        chatWidget.addEventListener('click', function() {
+            chatWindow.style.display = 'flex';
+            setTimeout(() => {
+                chatWindow.classList.add('active');
+            }, 10);
+        });
+
+        closeChat.addEventListener('click', function() {
+            chatWindow.classList.remove('active');
+            setTimeout(() => {
+                chatWindow.style.display = 'none';
+            }, 300);
+        });
+
+        chatInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                const message = this.value.trim();
+                if (message) {
+                    // Add user message
+                    const userMessage = document.createElement('div');
+                    userMessage.className = 'message user';
+                    userMessage.textContent = message;
+                    chatMessages.appendChild(userMessage);
+
+                    // Clear input
+                    this.value = '';
+
+                    // Simulate bot response
+                    setTimeout(() => {
+                        const botMessage = document.createElement('div');
+                        botMessage.className = 'message bot';
+                        botMessage.textContent = 'Thank you for your message. Our team will get back to you shortly.';
+                        chatMessages.appendChild(botMessage);
+                        chatMessages.scrollTop = chatMessages.scrollHeight;
+                    }, 1000);
+                }
+            }
+        });
+
+        // FAQ functionality
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', function() {
+                this.classList.toggle('active');
+            });
+        });
+
+        // Contact form handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Basic form validation
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const company = document.getElementById('company').value;
+            const message = document.getElementById('message').value;
+
+            if (!name || !email || !company || !message) {
+                alert('Please fill in all fields');
+                return;
+            }
+
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address');
+                return;
+            }
+
+            // Show success message
+            alert('Thank you for your message. We will get back to you soon!');
+            this.reset();
+        });
+
+        // Enhanced scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in, .slide-in').forEach(element => {
+            observer.observe(element);
+        });
+
+        // Loading Screen
+        window.addEventListener('load', function() {
+            const loading = document.querySelector('.loading');
+            loading.style.opacity = '0';
+            setTimeout(() => {
+                loading.style.display = 'none';
+            }, 500);
+        });
+
+        // Scroll Progress
+        window.addEventListener('scroll', function() {
+            const scrollProgress = document.querySelector('.scroll-progress');
+            const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            scrollProgress.style.transform = `scaleX(${scrollPercent / 100})`;
+        });
+
+        // Mobile Navigation
+        const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const closeMobileNav = document.querySelector('.close-mobile-nav');
+
+        mobileNavToggle.addEventListener('click', function() {
+            mobileNav.classList.add('active');
+        });
+
+        closeMobileNav.addEventListener('click', function() {
+            mobileNav.classList.remove('active');
+        });
+
+        // Enhanced Feature Card Animations
+        const featureCards = document.querySelectorAll('.feature-card');
+        featureCards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px)';
+            });
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Enhanced ROI Calculator
+        const calculatorInputs = document.querySelectorAll('.calculator-input input');
+        calculatorInputs.forEach(input => {
+            input.addEventListener('input', function() {
+                this.style.borderColor = '#00d4ff';
+                setTimeout(() => {
+                    this.style.borderColor = '';
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html> 
